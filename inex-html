@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Modulo di contatto</title>
+  <style>
+    body { font-family: sans-serif; padding: 2em; max-width: 600px; margin: auto; }
+    input, textarea { display: block; width: 100%; margin-bottom: 1em; padding: 0.5em; }
+    button { padding: 0.5em 1em; background: #0073aa; color: white; border: none; cursor: pointer; }
+    button:hover { background: #005f8d; }
+  </style>
+</head>
+<body>
+  <h2>Contattaci</h2>
+
+  <form action="https://nonbaronial-wreathlike-trisha.ngrok-free.dev/api/form" method="POST">
+    <input name="nome" type="text" placeholder="Nome" required />
+    <input name="email" type="email" placeholder="Email" required />
+    <textarea name="messaggio" placeholder="Messaggio" required></textarea>
+    <button type="submit">Invia</button>
+  </form>
+</body>
+</html>
